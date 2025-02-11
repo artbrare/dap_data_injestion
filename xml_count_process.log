@@ -1,0 +1,40 @@
+2025-02-09 10:04:47,698 - ERROR - Folder /Users/artbrare/Documents/Greenstone/commodities-scrapper/xmlFiles_tickets does not exist
+2025-02-09 10:05:17,474 - INFO - Starting count in folder: /Users/artbrare/Documents/Greenstone/commodities-scrapper/xmlFiles_commodity_tickets
+2025-02-09 10:05:17,486 - INFO - Starting processing of 1088 files
+2025-02-09 10:05:29,708 - ERROR - Error processing file AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_153209_3B18DC55-4B9D-4B30-AD14-593454FEF65F.XML: Document is empty, line 1, column 1 (AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_153209_3B18DC55-4B9D-4B30-AD14-593454FEF65F.XML, line 1)
+2025-02-09 10:05:49,604 - ERROR - Error processing file AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_154546_605C67F8-CF7A-4A5C-8F31-D10E333A3116.XML: Document is empty, line 1, column 1 (AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_154546_605C67F8-CF7A-4A5C-8F31-D10E333A3116.XML, line 1)
+2025-02-09 10:05:53,729 - ERROR - Error processing file AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_154441_4E3DB9DE-90D1-4CC7-AB69-71166AB954D8.XML: Document is empty, line 1, column 1 (AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_154441_4E3DB9DE-90D1-4CC7-AB69-71166AB954D8.XML, line 1)
+2025-02-09 10:06:15,413 - ERROR - Error processing file AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_160626_B4160568-FA96-493E-9CFC-8AB1E1B4C52D.XML: Document is empty, line 1, column 1 (AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_160626_B4160568-FA96-493E-9CFC-8AB1E1B4C52D.XML, line 1)
+2025-02-09 10:07:45,826 - ERROR - Error processing file AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_154658_EA5A7257-31B8-4BB9-95B9-2CF21FFE710C.XML: Document is empty, line 1, column 1 (AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_154658_EA5A7257-31B8-4BB9-95B9-2CF21FFE710C.XML, line 1)
+2025-02-09 10:08:04,794 - ERROR - Error processing file AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_155429_F59A65F7-5666-4D05-951C-2D3820601BC3.XML: Document is empty, line 1, column 1 (AGRIS_F7_001_GRN_COMMODITYTICKETS_250118_155429_F59A65F7-5666-4D05-951C-2D3820601BC3.XML, line 1)
+2025-02-09 10:08:19,644 - INFO - 
+        Process Summary:
+        - Total commodity tickets: 1,080,617
+        - Non-deleted commodity tickets: 919,980
+        - Total unique IDs: 1,072,788
+        - Non-deleted unique IDs: 919,938
+        - Processed files: 1088
+        - Files with errors: 0
+        
+2025-02-09 10:12:41,813 - INFO - Starting count in folder: /Users/artbrare/Documents/Greenstone/commodities-scrapper/xmlFiles_commodity_tickets
+2025-02-09 10:12:41,818 - INFO - Starting processing of 1088 files
+2025-02-09 10:15:46,524 - INFO - 
+        Process Summary:
+        - Total commodity tickets: 1,086,617
+        - Non-deleted commodity tickets: 924,774
+        - Total unique IDs: 1,078,561
+        - Non-deleted unique IDs: 924,732
+        - Processed files: 1088
+        - Files with errors: 0
+        
+2025-02-09 11:48:29,952 - INFO - Starting count in folder: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmlFiles_tickets
+2025-02-09 11:48:29,953 - INFO - Starting processing of 11 files
+2025-02-09 11:53:21,232 - INFO - 
+        Process Summary:
+        - Total commodity tickets: 1,086,617
+        - Non-deleted commodity tickets: 924,774
+        - Total unique IDs: 1,078,561
+        - Non-deleted unique IDs: 924,732
+        - Processed files: 11
+        - Files with errors: 0
+        

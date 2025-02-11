@@ -1,0 +1,16 @@
+__pycache__
+.venv
+.vscode
+*.pyc
+
+merged_xmlFiles_contracts
+merged_xmlFiles_tickets
+reports
+xmlFiles_commodity_tickets
+xmlFiles_contracts
+
+.env
+contracts_count_process.log
+
+merged_xmlFiles_tickets.zip
+processed_files_cache.txt

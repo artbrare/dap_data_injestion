@@ -1,0 +1,382 @@
+2025-02-03 22:10:09,313 - INFO - Iniciando proceso de merge con 997 archivos
+2025-02-03 22:10:09,314 - INFO - Los archivos resultantes se guardarán en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221009
+2025-02-03 22:10:09,314 - INFO - Iniciando procesamiento de 997 archivos en 4 chunks
+2025-02-03 22:10:09,314 - INFO - Procesando chunk 1/4 (300 archivos)
+2025-02-03 22:11:18,090 - INFO - Iniciando proceso de merge con 997 archivos
+2025-02-03 22:11:18,090 - INFO - Los archivos resultantes se guardarán en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221118
+2025-02-03 22:11:18,090 - INFO - Iniciando procesamiento de 997 archivos en 20 chunks
+2025-02-03 22:11:18,090 - INFO - Procesando chunk 1/20 (50 archivos)
+2025-02-03 22:11:31,065 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221118/merged_result_chunk_1.xml
+2025-02-03 22:11:36,399 - INFO - Chunk 1 procesado exitosamente
+2025-02-03 22:11:36,400 - INFO - Procesando chunk 2/20 (50 archivos)
+2025-02-03 22:11:48,511 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221118/merged_result_chunk_2.xml
+2025-02-03 22:11:53,136 - INFO - Chunk 2 procesado exitosamente
+2025-02-03 22:11:53,137 - INFO - Procesando chunk 3/20 (50 archivos)
+2025-02-03 22:12:10,798 - INFO - Iniciando proceso de merge con 997 archivos
+2025-02-03 22:12:10,798 - INFO - Los archivos resultantes se guardarán en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221210
+2025-02-03 22:12:10,798 - INFO - Iniciando procesamiento de 997 archivos en 10 chunks
+2025-02-03 22:12:10,798 - INFO - Procesando chunk 1/10 (100 archivos)
+2025-02-03 22:13:03,554 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221210/merged_result_chunk_1.xml
+2025-02-03 22:13:50,869 - INFO - Chunk 1 procesado exitosamente
+2025-02-03 22:13:50,871 - INFO - Procesando chunk 2/10 (100 archivos)
+2025-02-03 22:15:46,122 - INFO - Iniciando proceso de merge con 997 archivos
+2025-02-03 22:15:46,123 - INFO - Los archivos resultantes se guardarán en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546
+2025-02-03 22:15:46,123 - INFO - Iniciando procesamiento de 997 archivos en 13 chunks
+2025-02-03 22:15:46,123 - INFO - Procesando chunk 1/13 (80 archivos)
+2025-02-03 22:16:37,932 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_1.xml
+2025-02-03 22:16:57,918 - INFO - Chunk 1 procesado exitosamente
+2025-02-03 22:16:57,924 - INFO - Procesando chunk 2/13 (80 archivos)
+2025-02-03 22:17:27,187 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_2.xml
+2025-02-03 22:17:36,846 - INFO - Chunk 2 procesado exitosamente
+2025-02-03 22:17:36,847 - INFO - Procesando chunk 3/13 (80 archivos)
+2025-02-03 22:18:56,261 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_3.xml
+2025-02-03 22:19:22,568 - INFO - Chunk 3 procesado exitosamente
+2025-02-03 22:19:22,571 - INFO - Procesando chunk 4/13 (80 archivos)
+2025-02-03 22:19:49,622 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_4.xml
+2025-02-03 22:19:58,006 - INFO - Chunk 4 procesado exitosamente
+2025-02-03 22:19:58,007 - INFO - Procesando chunk 5/13 (80 archivos)
+2025-02-03 22:20:19,389 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_5.xml
+2025-02-03 22:20:26,473 - INFO - Chunk 5 procesado exitosamente
+2025-02-03 22:20:26,474 - INFO - Procesando chunk 6/13 (80 archivos)
+2025-02-03 22:20:51,898 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_6.xml
+2025-02-03 22:21:08,581 - INFO - Chunk 6 procesado exitosamente
+2025-02-03 22:21:08,593 - INFO - Procesando chunk 7/13 (80 archivos)
+2025-02-03 22:21:33,190 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_7.xml
+2025-02-03 22:21:45,004 - INFO - Chunk 7 procesado exitosamente
+2025-02-03 22:21:45,011 - INFO - Procesando chunk 8/13 (80 archivos)
+2025-02-03 22:22:18,020 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_8.xml
+2025-02-03 22:22:29,234 - INFO - Chunk 8 procesado exitosamente
+2025-02-03 22:22:29,240 - INFO - Procesando chunk 9/13 (80 archivos)
+2025-02-03 22:22:50,508 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_9.xml
+2025-02-03 22:22:57,663 - INFO - Chunk 9 procesado exitosamente
+2025-02-03 22:22:57,664 - INFO - Procesando chunk 10/13 (80 archivos)
+2025-02-03 22:23:17,072 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_10.xml
+2025-02-03 22:23:23,819 - INFO - Chunk 10 procesado exitosamente
+2025-02-03 22:23:23,819 - INFO - Procesando chunk 11/13 (80 archivos)
+2025-02-03 22:23:43,397 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_11.xml
+2025-02-03 22:23:50,142 - INFO - Chunk 11 procesado exitosamente
+2025-02-03 22:23:50,142 - INFO - Procesando chunk 12/13 (80 archivos)
+2025-02-03 22:24:52,316 - ERROR - Error durante el proceso de merge: IO_WRITE
+2025-02-03 22:25:06,762 - ERROR - Error procesando chunk 12
+2025-02-03 22:25:06,764 - INFO - Procesando chunk 13/13 (37 archivos)
+2025-02-03 22:25:37,105 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_221546/merged_result_chunk_13.xml
+2025-02-03 22:25:42,221 - INFO - Chunk 13 procesado exitosamente
+2025-02-03 22:25:42,223 - INFO - Proceso completado
+2025-02-03 22:28:35,820 - INFO - Iniciando proceso de merge con 997 archivos
+2025-02-03 22:28:35,821 - INFO - Los archivos resultantes se guardarán en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_222835
+2025-02-03 22:28:35,821 - INFO - Iniciando procesamiento de 997 archivos en 13 chunks
+2025-02-03 22:28:35,821 - INFO - Procesando chunk 12/13 (80 archivos)
+2025-02-03 22:29:03,337 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250203_222835/merged_result_chunk_12.xml
+2025-02-03 22:29:20,376 - INFO - Chunk 12 procesado exitosamente
+2025-02-03 22:29:20,384 - INFO - Proceso completado
+2025-02-04 11:03:58,512 - INFO - Iniciando proceso de merge con 997 archivos
+2025-02-04 11:03:58,512 - INFO - Los archivos resultantes se guardarán en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110358
+2025-02-04 11:03:58,512 - INFO - Iniciando procesamiento de 997 archivos en 100 chunks
+2025-02-04 11:03:58,512 - INFO - Procesando chunk 12/100 (10 archivos)
+2025-02-04 11:04:01,294 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110358/merged_result_chunk_12.xml
+2025-02-04 11:04:02,015 - INFO - Chunk 12 procesado exitosamente
+2025-02-04 11:04:02,015 - INFO - Proceso completado
+2025-02-04 11:04:45,497 - INFO - Iniciando proceso de merge con 997 archivos
+2025-02-04 11:04:45,497 - INFO - Los archivos resultantes se guardarán en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445
+2025-02-04 11:04:45,497 - INFO - Iniciando procesamiento de 997 archivos en 100 chunks
+2025-02-04 11:04:45,497 - INFO - Procesando chunk 1/100 (10 archivos)
+2025-02-04 11:04:47,859 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_1.xml
+2025-02-04 11:04:48,949 - INFO - Chunk 1 procesado exitosamente
+2025-02-04 11:04:48,949 - INFO - Procesando chunk 2/100 (10 archivos)
+2025-02-04 11:04:52,101 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_2.xml
+2025-02-04 11:04:53,009 - INFO - Chunk 2 procesado exitosamente
+2025-02-04 11:04:53,009 - INFO - Procesando chunk 3/100 (10 archivos)
+2025-02-04 11:04:55,624 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_3.xml
+2025-02-04 11:04:56,518 - INFO - Chunk 3 procesado exitosamente
+2025-02-04 11:04:56,518 - INFO - Procesando chunk 4/100 (10 archivos)
+2025-02-04 11:04:58,841 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_4.xml
+2025-02-04 11:04:59,522 - INFO - Chunk 4 procesado exitosamente
+2025-02-04 11:04:59,522 - INFO - Procesando chunk 5/100 (10 archivos)
+2025-02-04 11:05:01,706 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_5.xml
+2025-02-04 11:05:02,610 - INFO - Chunk 5 procesado exitosamente
+2025-02-04 11:05:02,610 - INFO - Procesando chunk 6/100 (10 archivos)
+2025-02-04 11:05:04,726 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_6.xml
+2025-02-04 11:05:05,606 - INFO - Chunk 6 procesado exitosamente
+2025-02-04 11:05:05,607 - INFO - Procesando chunk 7/100 (10 archivos)
+2025-02-04 11:05:07,536 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_7.xml
+2025-02-04 11:05:08,101 - INFO - Chunk 7 procesado exitosamente
+2025-02-04 11:05:08,101 - INFO - Procesando chunk 8/100 (10 archivos)
+2025-02-04 11:05:09,837 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_8.xml
+2025-02-04 11:05:10,399 - INFO - Chunk 8 procesado exitosamente
+2025-02-04 11:05:10,400 - INFO - Procesando chunk 9/100 (10 archivos)
+2025-02-04 11:05:12,298 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_9.xml
+2025-02-04 11:05:12,940 - INFO - Chunk 9 procesado exitosamente
+2025-02-04 11:05:12,941 - INFO - Procesando chunk 10/100 (10 archivos)
+2025-02-04 11:05:15,562 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_10.xml
+2025-02-04 11:05:16,438 - INFO - Chunk 10 procesado exitosamente
+2025-02-04 11:05:16,439 - INFO - Procesando chunk 11/100 (10 archivos)
+2025-02-04 11:05:19,296 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_11.xml
+2025-02-04 11:05:20,185 - INFO - Chunk 11 procesado exitosamente
+2025-02-04 11:05:20,185 - INFO - Procesando chunk 12/100 (10 archivos)
+2025-02-04 11:05:23,199 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_12.xml
+2025-02-04 11:05:25,027 - INFO - Chunk 12 procesado exitosamente
+2025-02-04 11:05:25,028 - INFO - Procesando chunk 13/100 (10 archivos)
+2025-02-04 11:05:27,590 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_13.xml
+2025-02-04 11:05:28,332 - INFO - Chunk 13 procesado exitosamente
+2025-02-04 11:05:28,333 - INFO - Procesando chunk 14/100 (10 archivos)
+2025-02-04 11:05:31,058 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_14.xml
+2025-02-04 11:05:31,964 - INFO - Chunk 14 procesado exitosamente
+2025-02-04 11:05:31,964 - INFO - Procesando chunk 15/100 (10 archivos)
+2025-02-04 11:05:34,748 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_15.xml
+2025-02-04 11:05:35,674 - INFO - Chunk 15 procesado exitosamente
+2025-02-04 11:05:35,674 - INFO - Procesando chunk 16/100 (10 archivos)
+2025-02-04 11:05:38,098 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_16.xml
+2025-02-04 11:05:38,866 - INFO - Chunk 16 procesado exitosamente
+2025-02-04 11:05:38,866 - INFO - Procesando chunk 17/100 (10 archivos)
+2025-02-04 11:05:41,452 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_17.xml
+2025-02-04 11:05:42,430 - INFO - Chunk 17 procesado exitosamente
+2025-02-04 11:05:42,430 - INFO - Procesando chunk 18/100 (10 archivos)
+2025-02-04 11:05:44,622 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_18.xml
+2025-02-04 11:05:45,291 - INFO - Chunk 18 procesado exitosamente
+2025-02-04 11:05:45,291 - INFO - Procesando chunk 19/100 (10 archivos)
+2025-02-04 11:05:47,300 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_19.xml
+2025-02-04 11:05:47,946 - INFO - Chunk 19 procesado exitosamente
+2025-02-04 11:05:47,946 - INFO - Procesando chunk 20/100 (10 archivos)
+2025-02-04 11:05:49,988 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_20.xml
+2025-02-04 11:05:50,637 - INFO - Chunk 20 procesado exitosamente
+2025-02-04 11:05:50,637 - INFO - Procesando chunk 21/100 (10 archivos)
+2025-02-04 11:05:52,640 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_21.xml
+2025-02-04 11:05:53,350 - INFO - Chunk 21 procesado exitosamente
+2025-02-04 11:05:53,350 - INFO - Procesando chunk 22/100 (10 archivos)
+2025-02-04 11:05:55,236 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_22.xml
+2025-02-04 11:05:55,861 - INFO - Chunk 22 procesado exitosamente
+2025-02-04 11:05:55,861 - INFO - Procesando chunk 23/100 (10 archivos)
+2025-02-04 11:05:57,936 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_23.xml
+2025-02-04 11:05:58,509 - INFO - Chunk 23 procesado exitosamente
+2025-02-04 11:05:58,509 - INFO - Procesando chunk 24/100 (10 archivos)
+2025-02-04 11:06:00,080 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_24.xml
+2025-02-04 11:06:00,562 - INFO - Chunk 24 procesado exitosamente
+2025-02-04 11:06:00,562 - INFO - Procesando chunk 25/100 (10 archivos)
+2025-02-04 11:06:02,604 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_25.xml
+2025-02-04 11:06:03,201 - INFO - Chunk 25 procesado exitosamente
+2025-02-04 11:06:03,201 - INFO - Procesando chunk 26/100 (10 archivos)
+2025-02-04 11:06:05,999 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_26.xml
+2025-02-04 11:06:06,791 - INFO - Chunk 26 procesado exitosamente
+2025-02-04 11:06:06,791 - INFO - Procesando chunk 27/100 (10 archivos)
+2025-02-04 11:06:08,913 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_27.xml
+2025-02-04 11:06:09,537 - INFO - Chunk 27 procesado exitosamente
+2025-02-04 11:06:09,537 - INFO - Procesando chunk 28/100 (10 archivos)
+2025-02-04 11:06:12,062 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_28.xml
+2025-02-04 11:06:13,108 - INFO - Chunk 28 procesado exitosamente
+2025-02-04 11:06:13,108 - INFO - Procesando chunk 29/100 (10 archivos)
+2025-02-04 11:06:15,355 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_29.xml
+2025-02-04 11:06:16,037 - INFO - Chunk 29 procesado exitosamente
+2025-02-04 11:06:16,037 - INFO - Procesando chunk 30/100 (10 archivos)
+2025-02-04 11:06:18,922 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_30.xml
+2025-02-04 11:06:19,724 - INFO - Chunk 30 procesado exitosamente
+2025-02-04 11:06:19,725 - INFO - Procesando chunk 31/100 (10 archivos)
+2025-02-04 11:06:21,831 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_31.xml
+2025-02-04 11:06:22,494 - INFO - Chunk 31 procesado exitosamente
+2025-02-04 11:06:22,495 - INFO - Procesando chunk 32/100 (10 archivos)
+2025-02-04 11:06:24,408 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_32.xml
+2025-02-04 11:06:25,027 - INFO - Chunk 32 procesado exitosamente
+2025-02-04 11:06:25,027 - INFO - Procesando chunk 33/100 (10 archivos)
+2025-02-04 11:06:26,745 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_33.xml
+2025-02-04 11:06:27,299 - INFO - Chunk 33 procesado exitosamente
+2025-02-04 11:06:27,299 - INFO - Procesando chunk 34/100 (10 archivos)
+2025-02-04 11:06:28,750 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_34.xml
+2025-02-04 11:06:29,253 - INFO - Chunk 34 procesado exitosamente
+2025-02-04 11:06:29,253 - INFO - Procesando chunk 35/100 (10 archivos)
+2025-02-04 11:06:31,209 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_35.xml
+2025-02-04 11:06:31,815 - INFO - Chunk 35 procesado exitosamente
+2025-02-04 11:06:31,815 - INFO - Procesando chunk 36/100 (10 archivos)
+2025-02-04 11:06:33,396 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_36.xml
+2025-02-04 11:06:33,928 - INFO - Chunk 36 procesado exitosamente
+2025-02-04 11:06:33,929 - INFO - Procesando chunk 37/100 (10 archivos)
+2025-02-04 11:06:35,326 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_37.xml
+2025-02-04 11:06:35,771 - INFO - Chunk 37 procesado exitosamente
+2025-02-04 11:06:35,772 - INFO - Procesando chunk 38/100 (10 archivos)
+2025-02-04 11:06:37,173 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_38.xml
+2025-02-04 11:06:37,805 - INFO - Chunk 38 procesado exitosamente
+2025-02-04 11:06:37,805 - INFO - Procesando chunk 39/100 (10 archivos)
+2025-02-04 11:06:39,909 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_39.xml
+2025-02-04 11:06:40,489 - INFO - Chunk 39 procesado exitosamente
+2025-02-04 11:06:40,489 - INFO - Procesando chunk 40/100 (10 archivos)
+2025-02-04 11:06:42,462 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_40.xml
+2025-02-04 11:06:43,248 - INFO - Chunk 40 procesado exitosamente
+2025-02-04 11:06:43,248 - INFO - Procesando chunk 41/100 (10 archivos)
+2025-02-04 11:06:46,733 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_41.xml
+2025-02-04 11:06:47,807 - INFO - Chunk 41 procesado exitosamente
+2025-02-04 11:06:47,807 - INFO - Procesando chunk 42/100 (10 archivos)
+2025-02-04 11:06:50,348 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_42.xml
+2025-02-04 11:06:51,265 - INFO - Chunk 42 procesado exitosamente
+2025-02-04 11:06:51,265 - INFO - Procesando chunk 43/100 (10 archivos)
+2025-02-04 11:06:56,359 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_43.xml
+2025-02-04 11:06:57,317 - INFO - Chunk 43 procesado exitosamente
+2025-02-04 11:06:57,318 - INFO - Procesando chunk 44/100 (10 archivos)
+2025-02-04 11:07:01,519 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_44.xml
+2025-02-04 11:07:03,708 - INFO - Chunk 44 procesado exitosamente
+2025-02-04 11:07:03,709 - INFO - Procesando chunk 45/100 (10 archivos)
+2025-02-04 11:07:07,211 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_45.xml
+2025-02-04 11:07:08,353 - INFO - Chunk 45 procesado exitosamente
+2025-02-04 11:07:08,353 - INFO - Procesando chunk 46/100 (10 archivos)
+2025-02-04 11:07:10,871 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_46.xml
+2025-02-04 11:07:11,641 - INFO - Chunk 46 procesado exitosamente
+2025-02-04 11:07:11,641 - INFO - Procesando chunk 47/100 (10 archivos)
+2025-02-04 11:07:17,099 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_47.xml
+2025-02-04 11:07:18,254 - INFO - Chunk 47 procesado exitosamente
+2025-02-04 11:07:18,254 - INFO - Procesando chunk 48/100 (10 archivos)
+2025-02-04 11:07:22,497 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_48.xml
+2025-02-04 11:07:23,910 - INFO - Chunk 48 procesado exitosamente
+2025-02-04 11:07:23,911 - INFO - Procesando chunk 49/100 (10 archivos)
+2025-02-04 11:07:26,591 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_49.xml
+2025-02-04 11:07:27,302 - INFO - Chunk 49 procesado exitosamente
+2025-02-04 11:07:27,302 - INFO - Procesando chunk 50/100 (10 archivos)
+2025-02-04 11:07:29,733 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_50.xml
+2025-02-04 11:07:30,373 - INFO - Chunk 50 procesado exitosamente
+2025-02-04 11:07:30,374 - INFO - Procesando chunk 51/100 (10 archivos)
+2025-02-04 11:07:32,562 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_51.xml
+2025-02-04 11:07:33,394 - INFO - Chunk 51 procesado exitosamente
+2025-02-04 11:07:33,395 - INFO - Procesando chunk 52/100 (10 archivos)
+2025-02-04 11:07:35,196 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_52.xml
+2025-02-04 11:07:35,751 - INFO - Chunk 52 procesado exitosamente
+2025-02-04 11:07:35,751 - INFO - Procesando chunk 53/100 (10 archivos)
+2025-02-04 11:07:40,975 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_53.xml
+2025-02-04 11:07:43,049 - INFO - Chunk 53 procesado exitosamente
+2025-02-04 11:07:43,054 - INFO - Procesando chunk 54/100 (10 archivos)
+2025-02-04 11:07:46,663 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_54.xml
+2025-02-04 11:07:47,700 - INFO - Chunk 54 procesado exitosamente
+2025-02-04 11:07:47,701 - INFO - Procesando chunk 55/100 (10 archivos)
+2025-02-04 11:07:51,177 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_55.xml
+2025-02-04 11:07:51,995 - INFO - Chunk 55 procesado exitosamente
+2025-02-04 11:07:51,995 - INFO - Procesando chunk 56/100 (10 archivos)
+2025-02-04 11:07:54,288 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_56.xml
+2025-02-04 11:07:55,120 - INFO - Chunk 56 procesado exitosamente
+2025-02-04 11:07:55,120 - INFO - Procesando chunk 57/100 (10 archivos)
+2025-02-04 11:07:57,751 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_57.xml
+2025-02-04 11:07:58,674 - INFO - Chunk 57 procesado exitosamente
+2025-02-04 11:07:58,674 - INFO - Procesando chunk 58/100 (10 archivos)
+2025-02-04 11:08:01,278 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_58.xml
+2025-02-04 11:08:02,112 - INFO - Chunk 58 procesado exitosamente
+2025-02-04 11:08:02,113 - INFO - Procesando chunk 59/100 (10 archivos)
+2025-02-04 11:08:04,323 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_59.xml
+2025-02-04 11:08:05,058 - INFO - Chunk 59 procesado exitosamente
+2025-02-04 11:08:05,058 - INFO - Procesando chunk 60/100 (10 archivos)
+2025-02-04 11:08:07,525 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_60.xml
+2025-02-04 11:08:08,346 - INFO - Chunk 60 procesado exitosamente
+2025-02-04 11:08:08,346 - INFO - Procesando chunk 61/100 (10 archivos)
+2025-02-04 11:08:10,829 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_61.xml
+2025-02-04 11:08:11,751 - INFO - Chunk 61 procesado exitosamente
+2025-02-04 11:08:11,751 - INFO - Procesando chunk 62/100 (10 archivos)
+2025-02-04 11:08:14,670 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_62.xml
+2025-02-04 11:08:15,637 - INFO - Chunk 62 procesado exitosamente
+2025-02-04 11:08:15,637 - INFO - Procesando chunk 63/100 (10 archivos)
+2025-02-04 11:08:18,474 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_63.xml
+2025-02-04 11:08:19,364 - INFO - Chunk 63 procesado exitosamente
+2025-02-04 11:08:19,364 - INFO - Procesando chunk 64/100 (10 archivos)
+2025-02-04 11:08:21,867 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_64.xml
+2025-02-04 11:08:22,704 - INFO - Chunk 64 procesado exitosamente
+2025-02-04 11:08:22,705 - INFO - Procesando chunk 65/100 (10 archivos)
+2025-02-04 11:08:25,781 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_65.xml
+2025-02-04 11:08:26,924 - INFO - Chunk 65 procesado exitosamente
+2025-02-04 11:08:26,924 - INFO - Procesando chunk 66/100 (10 archivos)
+2025-02-04 11:08:28,815 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_66.xml
+2025-02-04 11:08:29,330 - INFO - Chunk 66 procesado exitosamente
+2025-02-04 11:08:29,330 - INFO - Procesando chunk 67/100 (10 archivos)
+2025-02-04 11:08:31,049 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_67.xml
+2025-02-04 11:08:31,591 - INFO - Chunk 67 procesado exitosamente
+2025-02-04 11:08:31,591 - INFO - Procesando chunk 68/100 (10 archivos)
+2025-02-04 11:08:33,254 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_68.xml
+2025-02-04 11:08:33,756 - INFO - Chunk 68 procesado exitosamente
+2025-02-04 11:08:33,756 - INFO - Procesando chunk 69/100 (10 archivos)
+2025-02-04 11:08:35,266 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_69.xml
+2025-02-04 11:08:35,773 - INFO - Chunk 69 procesado exitosamente
+2025-02-04 11:08:35,774 - INFO - Procesando chunk 70/100 (10 archivos)
+2025-02-04 11:08:37,554 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_70.xml
+2025-02-04 11:08:38,070 - INFO - Chunk 70 procesado exitosamente
+2025-02-04 11:08:38,070 - INFO - Procesando chunk 71/100 (10 archivos)
+2025-02-04 11:08:40,177 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_71.xml
+2025-02-04 11:08:40,827 - INFO - Chunk 71 procesado exitosamente
+2025-02-04 11:08:40,827 - INFO - Procesando chunk 72/100 (10 archivos)
+2025-02-04 11:08:42,758 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_72.xml
+2025-02-04 11:08:43,357 - INFO - Chunk 72 procesado exitosamente
+2025-02-04 11:08:43,357 - INFO - Procesando chunk 73/100 (10 archivos)
+2025-02-04 11:08:45,127 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_73.xml
+2025-02-04 11:08:45,744 - INFO - Chunk 73 procesado exitosamente
+2025-02-04 11:08:45,744 - INFO - Procesando chunk 74/100 (10 archivos)
+2025-02-04 11:08:48,267 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_74.xml
+2025-02-04 11:08:49,009 - INFO - Chunk 74 procesado exitosamente
+2025-02-04 11:08:49,009 - INFO - Procesando chunk 75/100 (10 archivos)
+2025-02-04 11:08:50,655 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_75.xml
+2025-02-04 11:08:51,185 - INFO - Chunk 75 procesado exitosamente
+2025-02-04 11:08:51,185 - INFO - Procesando chunk 76/100 (10 archivos)
+2025-02-04 11:08:52,898 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_76.xml
+2025-02-04 11:08:53,488 - INFO - Chunk 76 procesado exitosamente
+2025-02-04 11:08:53,490 - INFO - Procesando chunk 77/100 (10 archivos)
+2025-02-04 11:08:54,997 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_77.xml
+2025-02-04 11:08:55,474 - INFO - Chunk 77 procesado exitosamente
+2025-02-04 11:08:55,475 - INFO - Procesando chunk 78/100 (10 archivos)
+2025-02-04 11:08:57,360 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_78.xml
+2025-02-04 11:08:57,909 - INFO - Chunk 78 procesado exitosamente
+2025-02-04 11:08:57,909 - INFO - Procesando chunk 79/100 (10 archivos)
+2025-02-04 11:08:59,374 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_79.xml
+2025-02-04 11:08:59,848 - INFO - Chunk 79 procesado exitosamente
+2025-02-04 11:08:59,849 - INFO - Procesando chunk 80/100 (10 archivos)
+2025-02-04 11:09:01,291 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_80.xml
+2025-02-04 11:09:01,722 - INFO - Chunk 80 procesado exitosamente
+2025-02-04 11:09:01,722 - INFO - Procesando chunk 81/100 (10 archivos)
+2025-02-04 11:09:03,320 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_81.xml
+2025-02-04 11:09:04,000 - INFO - Chunk 81 procesado exitosamente
+2025-02-04 11:09:04,000 - INFO - Procesando chunk 82/100 (10 archivos)
+2025-02-04 11:09:06,103 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_82.xml
+2025-02-04 11:09:06,656 - INFO - Chunk 82 procesado exitosamente
+2025-02-04 11:09:06,656 - INFO - Procesando chunk 83/100 (10 archivos)
+2025-02-04 11:09:08,469 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_83.xml
+2025-02-04 11:09:09,095 - INFO - Chunk 83 procesado exitosamente
+2025-02-04 11:09:09,095 - INFO - Procesando chunk 84/100 (10 archivos)
+2025-02-04 11:09:10,662 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_84.xml
+2025-02-04 11:09:11,146 - INFO - Chunk 84 procesado exitosamente
+2025-02-04 11:09:11,146 - INFO - Procesando chunk 85/100 (10 archivos)
+2025-02-04 11:09:13,804 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_85.xml
+2025-02-04 11:09:14,801 - INFO - Chunk 85 procesado exitosamente
+2025-02-04 11:09:14,802 - INFO - Procesando chunk 86/100 (10 archivos)
+2025-02-04 11:09:16,884 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_86.xml
+2025-02-04 11:09:17,549 - INFO - Chunk 86 procesado exitosamente
+2025-02-04 11:09:17,549 - INFO - Procesando chunk 87/100 (10 archivos)
+2025-02-04 11:09:19,811 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_87.xml
+2025-02-04 11:09:20,466 - INFO - Chunk 87 procesado exitosamente
+2025-02-04 11:09:20,466 - INFO - Procesando chunk 88/100 (10 archivos)
+2025-02-04 11:09:22,423 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_88.xml
+2025-02-04 11:09:23,036 - INFO - Chunk 88 procesado exitosamente
+2025-02-04 11:09:23,036 - INFO - Procesando chunk 89/100 (10 archivos)
+2025-02-04 11:09:26,568 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_89.xml
+2025-02-04 11:09:27,828 - INFO - Chunk 89 procesado exitosamente
+2025-02-04 11:09:27,829 - INFO - Procesando chunk 90/100 (10 archivos)
+2025-02-04 11:09:30,418 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_90.xml
+2025-02-04 11:09:31,306 - INFO - Chunk 90 procesado exitosamente
+2025-02-04 11:09:31,306 - INFO - Procesando chunk 91/100 (10 archivos)
+2025-02-04 11:09:33,578 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_91.xml
+2025-02-04 11:09:34,217 - INFO - Chunk 91 procesado exitosamente
+2025-02-04 11:09:34,217 - INFO - Procesando chunk 92/100 (10 archivos)
+2025-02-04 11:09:37,050 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_92.xml
+2025-02-04 11:09:37,783 - INFO - Chunk 92 procesado exitosamente
+2025-02-04 11:09:37,783 - INFO - Procesando chunk 93/100 (10 archivos)
+2025-02-04 11:09:39,941 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_93.xml
+2025-02-04 11:09:40,710 - INFO - Chunk 93 procesado exitosamente
+2025-02-04 11:09:40,710 - INFO - Procesando chunk 94/100 (10 archivos)
+2025-02-04 11:09:42,896 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_94.xml
+2025-02-04 11:09:43,631 - INFO - Chunk 94 procesado exitosamente
+2025-02-04 11:09:43,631 - INFO - Procesando chunk 95/100 (10 archivos)
+2025-02-04 11:09:46,613 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_95.xml
+2025-02-04 11:09:47,345 - INFO - Chunk 95 procesado exitosamente
+2025-02-04 11:09:47,345 - INFO - Procesando chunk 96/100 (10 archivos)
+2025-02-04 11:09:49,373 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_96.xml
+2025-02-04 11:09:49,995 - INFO - Chunk 96 procesado exitosamente
+2025-02-04 11:09:49,995 - INFO - Procesando chunk 97/100 (10 archivos)
+2025-02-04 11:09:51,758 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_97.xml
+2025-02-04 11:09:52,612 - INFO - Chunk 97 procesado exitosamente
+2025-02-04 11:09:52,612 - INFO - Procesando chunk 98/100 (10 archivos)
+2025-02-04 11:09:55,302 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_98.xml
+2025-02-04 11:09:55,932 - INFO - Chunk 98 procesado exitosamente
+2025-02-04 11:09:55,932 - INFO - Procesando chunk 99/100 (10 archivos)
+2025-02-04 11:09:57,875 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_99.xml
+2025-02-04 11:09:58,494 - INFO - Chunk 99 procesado exitosamente
+2025-02-04 11:09:58,494 - INFO - Procesando chunk 100/100 (7 archivos)
+2025-02-04 11:09:59,743 - INFO - Merge completado exitosamente. Resultado guardado en: /Users/artbrare/Documents/Greenstone/commodities-scrapper/merged_xmls_20250204_110445/merged_result_chunk_100.xml
+2025-02-04 11:10:00,144 - INFO - Chunk 100 procesado exitosamente
+2025-02-04 11:10:00,144 - INFO - Proceso completado
