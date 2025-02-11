@@ -888,8 +888,8 @@ class CommodityTicketsProcessor:
             
             # Procesar cada tipo de dato en orden
             # self.bulk_insert_data(conn, 'commodity_tickets', staging_data['commodity_tickets'])
-            self.bulk_insert_data(conn, 'commodity_tickets_applications', staging_data['applications'])
-            self.bulk_insert_data(conn, 'commodity_tickets_discounts', staging_data['discounts'])
+            # self.bulk_insert_data(conn, 'commodity_tickets_applications', staging_data['applications'])
+            # self.bulk_insert_data(conn, 'commodity_tickets_discounts', staging_data['discounts'])
             self.bulk_insert_data(conn, 'commodity_tickets_grade_factors', staging_data['grade_factors'])
             
             self.logger.info("Actualización masiva completada exitosamente")
@@ -989,7 +989,7 @@ class CommodityTicketsProcessor:
         """)
         return [row[0] for row in cursor.fetchall()]
 
-    def bulk_insert_data(self, conn, table_name: str, data: List[Dict[str, Any]], max_workers: int = 12, batch_size: int = 1000):
+    def bulk_insert_data(self, conn, table_name: str, data: List[Dict[str, Any]], max_workers: int = 28):
         """
         Realiza inserción masiva de datos con procesamiento paralelo.
         
@@ -1010,15 +1010,6 @@ class CommodityTicketsProcessor:
         try:
             # Convertir a DataFrame
             df = pd.DataFrame(data)
-            
-            # Diagnóstico inicial para source_filename
-            if table_name == 'commodity_tickets':
-                self.logger.info("Verificando datos iniciales de source_filename:")
-                if 'source_filename' in df.columns:
-                    self.logger.info(f"Valores únicos de source_filename: {df['source_filename'].unique()}")
-                    self.logger.info(f"Muestra de registros con source_filename:\n{df[['unique_id', 'source_filename']].head()}")
-                else:
-                    self.logger.warning("source_filename no encontrado en las columnas iniciales")
             
             # Configuración de tabla
             table_config = {
@@ -1042,191 +1033,163 @@ class CommodityTicketsProcessor:
             
             config = table_config[table_name]
             
-            # Crear tabla temporal y obtener columnas válidas
-            temp_table = f"##temp_{table_name}_{datetime.now().strftime('%Y%m%d%H%M%S')}"
-            valid_columns = self.create_temp_table_with_schema(cursor, table_name, temp_table)
-            
-            # Verificar si source_filename está en las columnas válidas
-            if table_name == 'commodity_tickets':
-                self.logger.info(f"Columnas válidas para la tabla temporal: {valid_columns}")
-                if 'source_filename' in valid_columns:
-                    self.logger.info("source_filename está en las columnas válidas")
-                else:
-                    self.logger.warning("source_filename no está en las columnas válidas")
-            
-            conn.commit()
+            # Usar lock para la creación y uso de la tabla temporal
+            with self.lock:
+                # Crear tabla temporal y obtener columnas válidas
+                temp_table = f"##temp_{table_name}_{datetime.now().strftime('%Y%m%d%H%M%S')}"
+                valid_columns = self.create_temp_table_with_schema(cursor, table_name, temp_table)
+                conn.commit()
 
-            # Filtrar DataFrame para incluir solo columnas válidas
-            df = df[[col for col in df.columns if col in valid_columns]]
-            columns = list(df.columns)
-            columns_str = ', '.join(f"[{col}]" for col in columns)
-            
-            self.logger.debug(f"Columnas a procesar: {columns}")
-            
-            def process_batch(batch_data):
-                try:
-                    with self.get_connection() as batch_conn:
-                        batch_cursor = batch_conn.cursor()
-                        rows_processed = 0
-                        
-                        # Obtener los tamaños máximos de las columnas
-                        batch_cursor.execute(f"""
-                            SELECT COLUMN_NAME, CHARACTER_MAXIMUM_LENGTH
-                            FROM INFORMATION_SCHEMA.COLUMNS
-                            WHERE TABLE_NAME = '{table_name}'
-                            AND DATA_TYPE IN ('varchar', 'nvarchar', 'char', 'nchar')
-                        """)
-                        column_lengths = {row[0]: row[1] for row in batch_cursor.fetchall()}
-                        
-                        # Procesar cada fila individualmente
-                        for _, row in batch_data.iterrows():
-                            # Truncar strings que excedan el tamaño máximo
-                            processed_values = []
-                            for col, value in zip(columns, row):
-                                if pd.isna(value):
-                                    processed_values.append(None)
-                                elif isinstance(value, str) and col in column_lengths:
-                                    max_length = column_lengths[col]
-                                    if max_length != -1:  # -1 significa MAX
-                                        processed_values.append(value[:max_length])
+                # Filtrar DataFrame para incluir solo columnas válidas
+                df = df[[col for col in df.columns if col in valid_columns]]
+                columns = list(df.columns)
+                columns_str = ', '.join(f"[{col}]" for col in columns)
+                
+                self.logger.debug(f"Columnas a procesar: {columns}")
+                
+                def process_batch(batch_data):
+                    try:
+                        with self.get_connection() as batch_conn:
+                            batch_cursor = batch_conn.cursor()
+                            rows_processed = 0
+                            
+                            # Obtener los tamaños máximos de las columnas
+                            batch_cursor.execute(f"""
+                                SELECT COLUMN_NAME, CHARACTER_MAXIMUM_LENGTH
+                                FROM INFORMATION_SCHEMA.COLUMNS
+                                WHERE TABLE_NAME = '{table_name}'
+                                AND DATA_TYPE IN ('varchar', 'nvarchar', 'char', 'nchar')
+                            """)
+                            column_lengths = {row[0]: row[1] for row in batch_cursor.fetchall()}
+                            
+                            # Procesar cada fila individualmente
+                            for _, row in batch_data.iterrows():
+                                # Truncar strings que excedan el tamaño máximo
+                                processed_values = []
+                                for col, value in zip(columns, row):
+                                    if pd.isna(value):
+                                        processed_values.append(None)
+                                    elif isinstance(value, str) and col in column_lengths:
+                                        max_length = column_lengths[col]
+                                        if max_length != -1:  # -1 significa MAX
+                                            processed_values.append(value[:max_length])
+                                        else:
+                                            processed_values.append(value)
                                     else:
                                         processed_values.append(value)
-                                else:
-                                    processed_values.append(value)
-                            
-                            # Verificar valores de source_filename
-                            if table_name == 'commodity_tickets':
+                                
+                                # Insertar fila
+                                placeholders = '(' + ','.join(['?' for _ in processed_values]) + ')'
+                                insert_sql = f"""
+                                    INSERT INTO {temp_table} ({columns_str})
+                                    VALUES {placeholders}
+                                """
+                                
                                 try:
-                                    filename_index = columns.index('source_filename')
-                                    self.logger.debug(f"Valor de source_filename en fila: {processed_values[filename_index]}")
-                                except ValueError:
-                                    self.logger.warning("source_filename no encontrado en columnas procesadas")
-                            
-                            # Insertar fila
-                            placeholders = '(' + ','.join(['?' for _ in processed_values]) + ')'
-                            insert_sql = f"""
-                                INSERT INTO {temp_table} ({columns_str})
-                                VALUES {placeholders}
-                            """
-                            
-                            try:
-                                batch_cursor.execute(insert_sql, processed_values)
-                                rows_processed += 1
-                                
-                                # Commit cada 100 filas
-                                if rows_processed % 500 == 0:
-                                    batch_conn.commit()
+                                    batch_cursor.execute(insert_sql, processed_values)
+                                    rows_processed += 1
                                     
-                            except Exception as row_error:
-                                self.logger.error(f"Error insertando fila: {str(row_error)}")
-                                self.logger.error(f"Valores: {processed_values}")
-                                raise
-                        
-                        # Commit final
-                        batch_conn.commit()
-                        return rows_processed
-                                
-                except Exception as e:
-                    self.logger.error(f"Error procesando lote: {str(e)}")
-                    raise
-
-            # Dividir datos en lotes
-            batches = [df[i:i + batch_size] for i in range(0, len(df), batch_size)]
-            total_rows = 0
-            
-            # Procesar lotes en paralelo
-            with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-                future_to_batch = {executor.submit(process_batch, batch): i 
-                                for i, batch in enumerate(batches)}
-                
-                for future in concurrent.futures.as_completed(future_to_batch):
-                    batch_index = future_to_batch[future]
-                    try:
-                        rows_processed = future.result()
-                        total_rows += rows_processed
-                        self.logger.info(f"Lote {batch_index + 1}/{len(batches)} completado: {rows_processed} registros")
-                        self.logger.info(f"Progreso total: {total_rows}/{len(df)} registros")
+                                    # Commit cada 500 filas
+                                    if rows_processed % 500 == 0:
+                                        batch_conn.commit()
+                                        
+                                except Exception as row_error:
+                                    self.logger.error(f"Error insertando fila: {str(row_error)}")
+                                    self.logger.error(f"Valores: {processed_values}")
+                                    raise
+                            
+                            # Commit final
+                            batch_conn.commit()
+                            return rows_processed
+                                    
                     except Exception as e:
-                        self.logger.error(f"Error en lote {batch_index}: {str(e)}")
+                        self.logger.error(f"Error procesando lote: {str(e)}")
                         raise
 
-            # Verificar datos en tabla temporal antes de la inserción final
-            if table_name == 'commodity_tickets':
-                cursor.execute(f"SELECT COUNT(*) FROM {temp_table} WHERE source_filename IS NOT NULL")
-                count_with_filename = cursor.fetchone()[0]
-                self.logger.info(f"Registros con source_filename en tabla temporal: {count_with_filename}")
+                # Dividir datos en lotes
+                batch_size = 1000
+                batches = [df[i:i + batch_size] for i in range(0, len(df), batch_size)]
+                total_rows = 0
+                
+                # Procesar lotes en paralelo
+                with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+                    future_to_batch = {executor.submit(process_batch, batch): i 
+                                    for i, batch in enumerate(batches)}
+                    
+                    for future in concurrent.futures.as_completed(future_to_batch):
+                        batch_index = future_to_batch[future]
+                        try:
+                            rows_processed = future.result()
+                            total_rows += rows_processed
+                            self.logger.info(f"Lote {batch_index + 1}/{len(batches)} completado: {rows_processed} registros")
+                            self.logger.info(f"Progreso total: {total_rows}/{len(df)} registros")
+                        except Exception as e:
+                            self.logger.error(f"Error en lote {batch_index}: {str(e)}")
+                            raise
 
-            # Crear índices en la tabla temporal para mejorar rendimiento
-            if 'key_fields' in config:
-                key_condition = ' AND '.join([f"target.[{k}] = source.[{k}]" for k in config['key_fields']])
-                for key in config['key_fields']:
-                    cursor.execute(f"CREATE INDEX IX_{temp_table}_{key} ON {temp_table}([{key}])")
-            else:
-                key_condition = f"target.[{config['key_field']}] = source.[{config['key_field']}]"
-                cursor.execute(f"CREATE INDEX IX_{temp_table}_{config['key_field']} ON {temp_table}([{config['key_field']}])")
-            
-            # Actualizar registros existentes
-            self.logger.debug("Ejecutando UPDATE")
-            update_sql = f"""
-                UPDATE target
-                SET {', '.join(f'target.[{col}] = source.[{col}]' for col in columns)}
-                FROM {table_name} target
-                INNER JOIN {temp_table} source ON {key_condition}
-                WHERE source.[{config['version_field']}] > target.[{config['version_field']}]
-            """
-            cursor.execute(update_sql)
-            updates = cursor.rowcount
-            
-            # Insertar nuevos registros
-            self.logger.debug("Ejecutando INSERT")
-            if 'key_fields' in config:
-                # Para tablas con claves compuestas
-                insert_sql = f"""
-                    INSERT INTO {table_name} ({columns_str})
-                    SELECT {', '.join(f'source.[{col}]' for col in columns)}
-                    FROM {temp_table} source
-                    LEFT JOIN {table_name} target ON {key_condition}
-                    WHERE target.{config['key_fields'][0]} IS NULL
-                    AND target.{config['key_fields'][1]} IS NULL
+                # Crear índices en la tabla temporal para mejorar rendimiento
+                if 'key_fields' in config:
+                    key_condition = ' AND '.join([f"target.[{k}] = source.[{k}]" for k in config['key_fields']])
+                    for key in config['key_fields']:
+                        cursor.execute(f"CREATE INDEX IX_{temp_table}_{key} ON {temp_table}([{key}])")
+                else:
+                    key_condition = f"target.[{config['key_field']}] = source.[{config['key_field']}]"
+                    cursor.execute(f"CREATE INDEX IX_{temp_table}_{config['key_field']} ON {temp_table}([{config['key_field']}])")
+                
+                # Actualizar registros existentes
+                self.logger.debug("Ejecutando UPDATE")
+                update_sql = f"""
+                    UPDATE target
+                    SET {', '.join(f'target.[{col}] = source.[{col}]' for col in columns)}
+                    FROM {table_name} target
+                    INNER JOIN {temp_table} source ON {key_condition}
+                    WHERE source.[{config['version_field']}] > target.[{config['version_field']}]
                 """
-            else:
-                # Para tablas con clave simple
-                insert_sql = f"""
-                    INSERT INTO {table_name} ({columns_str})
-                    SELECT {', '.join(f'source.[{col}]' for col in columns)}
-                    FROM {temp_table} source
-                    LEFT JOIN {table_name} target ON {key_condition}
-                    WHERE target.{config['key_field']} IS NULL
-                """
+                cursor.execute(update_sql)
+                updates = cursor.rowcount
+                
+                # Insertar nuevos registros
+                self.logger.debug("Ejecutando INSERT")
+                if 'key_fields' in config:
+                    # Para tablas con claves compuestas
+                    insert_sql = f"""
+                        INSERT INTO {table_name} ({columns_str})
+                        SELECT {', '.join(f'source.[{col}]' for col in columns)}
+                        FROM {temp_table} source
+                        LEFT JOIN {table_name} target ON {key_condition}
+                        WHERE target.{config['key_fields'][0]} IS NULL
+                        AND target.{config['key_fields'][1]} IS NULL
+                    """
+                else:
+                    # Para tablas con clave simple
+                    insert_sql = f"""
+                        INSERT INTO {table_name} ({columns_str})
+                        SELECT {', '.join(f'source.[{col}]' for col in columns)}
+                        FROM {temp_table} source
+                        LEFT JOIN {table_name} target ON {key_condition}
+                        WHERE target.{config['key_field']} IS NULL
+                    """
 
-            cursor.execute(insert_sql)
-            inserts = cursor.rowcount
-            
-            # Verificar resultados finales
-            if table_name == 'commodity_tickets':
-                cursor.execute(f"SELECT COUNT(*) FROM {table_name} WHERE source_filename IS NOT NULL")
-                final_count = cursor.fetchone()[0]
-                self.logger.info(f"Registros finales con source_filename: {final_count}")
-            
-            total_time = (datetime.now() - start_time).total_seconds()
-            self.logger.info(f"""
-                Resumen de procesamiento para {table_name}:
-                - Registros actualizados: {updates}
-                - Registros insertados: {inserts}
-                - Tiempo total: {total_time:.2f} segundos
-                - Velocidad promedio: {len(df)/total_time:.2f} registros/segundo
-            """)
-            
+                cursor.execute(insert_sql)
+                inserts = cursor.rowcount
+                
+                total_time = (datetime.now() - start_time).total_seconds()
+                self.logger.info(f"""
+                    Resumen de procesamiento para {table_name}:
+                    - Registros actualizados: {updates}
+                    - Registros insertados: {inserts}
+                    - Tiempo total: {total_time:.2f} segundos
+                    - Velocidad promedio: {len(df)/total_time:.2f} registros/segundo
+                """)
+                
+                # Limpiar tabla temporal dentro del lock
+                cursor.execute(f"DROP TABLE IF EXISTS {temp_table}")
+                conn.commit()
+                
         except Exception as e:
             self.logger.error(f"Error en bulk_insert_data para {table_name}: {str(e)}")
             self.logger.error(f"Detalles del error: {traceback.format_exc()}")
             raise
-        finally:
-            try:
-                cursor.execute(f"DROP TABLE IF EXISTS {temp_table}")
-                conn.commit()
-            except Exception as cleanup_error:
-                self.logger.warning(f"Error durante la limpieza: {str(cleanup_error)}")
     # 7. Métodos de Logging y Seguimiento
     def start_process_log(self, filename: str) -> int:
         """Inicia el registro del proceso y retorna el ID del proceso"""
