@@ -18,13 +18,14 @@ def main():
     # Configurar el procesador
     processor = CommodityTicketsProcessor(
         connection_string=connection_string,
-        batch_size=100000,
+        batch_size=2000000,
         debug_mode=False
     )
 
     # Obtener la ruta de la carpeta XML
     xml_folder = 'merged_xmlFiles_tickets'
-    xml_folder = 'xmlFiles_commodity_tickets'
+    xml_folder = 'merged_xmlFiles_tickets_0'
+    # xml_folder = 'xmlFiles_commodity_tickets'
 
     try:
         # Procesar los archivos

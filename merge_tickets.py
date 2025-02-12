@@ -117,7 +117,7 @@ def main():
     try:
         # Configuración inicial
         current_path = Path.cwd()
-        xml_folder = current_path / 'xmlFiles_commodity_tickets'
+        xml_folder = current_path / 'merged_xmlFiles_tickets_0'
         chunk_size = 13
 
         # Verificar que la carpeta existe
