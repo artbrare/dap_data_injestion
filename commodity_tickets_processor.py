@@ -888,9 +888,9 @@ class CommodityTicketsProcessor:
             
             # Procesar cada tipo de dato en orden
             # self.bulk_insert_data(conn, 'commodity_tickets', staging_data['commodity_tickets'])
-            # self.bulk_insert_data(conn, 'commodity_tickets_applications', staging_data['applications'])
-            # self.bulk_insert_data(conn, 'commodity_tickets_discounts', staging_data['discounts'])
-            self.bulk_insert_data(conn, 'commodity_tickets_grade_factors', staging_data['grade_factors'], max_workers=12, batch_size=800)
+            self.bulk_insert_data(conn, 'commodity_tickets_applications', staging_data['applications'], max_workers=25, batch_size=800)
+            # self.bulk_insert_data(conn, 'commodity_tickets_discounts', staging_data['discounts'], max_workers=25, batch_size=800)
+            # self.bulk_insert_data(conn, 'commodity_tickets_grade_factors', staging_data['grade_factors'], max_workers=50, batch_size=1000)
             
             self.logger.info("Actualización masiva completada exitosamente")
             
@@ -1096,7 +1096,7 @@ class CommodityTicketsProcessor:
                                 SET {', '.join(f'target.[{col}] = source.[{col}]' for col in columns)}
                                 FROM {table_name} target
                                 INNER JOIN {batch_temp_table} source ON {key_condition}
-                                WHERE source.[{config['version_field']}] > target.[{config['version_field']}]
+                                WHERE source.[{config['version_field']}] >= target.[{config['version_field']}]
                             """
                             batch_cursor.execute(update_sql)
                             updates = batch_cursor.rowcount

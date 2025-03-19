@@ -24,8 +24,7 @@ def main():
 
     # Obtener la ruta de la carpeta XML
     xml_folder = 'merged_xmlFiles_tickets'
-    xml_folder = 'merged_xmlFiles_tickets_0'
-    # xml_folder = 'xmlFiles_commodity_tickets'
+    xml_folder = 'xmlFiles_commodity_tickets'
 
     try:
         # Procesar los archivos
